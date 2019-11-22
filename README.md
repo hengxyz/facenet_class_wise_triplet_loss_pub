@@ -1,8 +1,6 @@
 # Class wise triplet loss (center-triplet loss) for face recognition
 
-This is the training/validating script for the Inception-RsNet based deep CNNs implemented in Tensorflow (1.00) and python 2.7 for the  face verfication. 
-
-This training algorithm of the deep CNNs for face verfication is  based on the classwise-triplet loss loss algorithm described in the paper:
+This is the implementation of the classwise-triplet loss algorithm for face recognition described in the paper:
 ["Simple Triplet Loss Based on Intra/Inter-class Metric Learning for Face Verification"](http://openaccess.thecvf.com/content_ICCV_2017_workshops/papers/w23/Ming_Simple_Triplet_Loss_ICCV_2017_paper.pdf) published on the ICCV workshop 2017.
 
 The accuracy measured on the LFW test set is 98.5% when trained on CASIA-WebFace or 99.4% when trained on MsCeleb1M
@@ -82,4 +80,22 @@ facenet_train_classtripletloss.py is used for training and evaluate_face_verific
 - --epoch_size : Number of batches per epoch.
 - --trainset_start / --trainset_end : The number of the identities between --trainset_start and --trainset_end as the training set. This is used for very large scale dataset for training model.  
 - --batch_size : Numer of images per batch.  
+
+### Citation
+      @inproceedings{ming2017simple,
+        title={Simple triplet loss based on intra/inter-class metric learning for face verification},
+        author={Ming, Zuheng and Chazalon, Joseph and Luqman, Muhammad Muzzamil and Visani, Muriel and Burie, Jean-Christophe},
+        booktitle={2017 IEEE International Conference on Computer Vision Workshops (ICCVW)},
+        pages={1656--1664},
+        year={2017},
+        organization={IEEE}
+      }
+
+### License
+This code is distributed under MIT LICENSE
+
+### Contact
+Zuheng Ming
+zuheng.ming@univ-lr.fr
+
 
