@@ -8,10 +8,10 @@ This training algorithm of the deep CNNs for face verfication is  based on the c
 The accuracy measured on the LFW test set is 98.5% when trained on CASIA-WebFace or 99.4% when trained on MsCeleb1M
 
 ### Class-wise triplet loss
-Class-wise triplet loss reduce greatly the computation comparing to the classic triplet loss by using the centers instead of the elements of the class to calculate the triplet loss as shown in ![Fig.1](https://github.com/zuhengming/facenet_class_wise_triplet_loss/blob/master/figs/intra_inter_loss_cropped.png) ![Fig.2](https://github.com/zuhengming/facenet_class_wise_triplet_loss/blob/master/figs/computation_reduce.png).  
+Class-wise triplet loss reduce greatly the computation comparing to the classic triplet loss by using the centers instead of the elements of the class to calculate the triplet loss as shown in ![Fig.1](./figs/intra_inter_loss_cropped.png) ![Fig.2](./figs/computation_reduce.png).  
 Fig. 2 shows the the comparison of the softmax, center loss and proposed class-wise triplet loss on the dataset MNIST. The rows from top to bottom are corresponding to the softmax, center loss and proposed class-wise triplet loss respectively.
 <div align=center>
-   <img src="https://github.com/zuhengming/facenet_class_wise_triplet_loss/blob/master/figs/comparison.png">
+   <img src="./figs/comparison.png">
 </div>
 
 
